@@ -1,0 +1,38 @@
+<form novalidate (ngSubmit)="saveCustomer(customer.value)" [formGroup]="customer">
+    <input type="hidden" formControlName="id"/>
+    <div class="row">
+        <div class="input-field col s12">
+            <input placeholder="Placeholder" type="text" formControlName="name" id="name">
+            <label for="name">Name</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s6">
+            <input placeholder="Germany" type="text" formControlName="country" id="country">
+            <label for="country">Country</label>
+        </div>
+        <div class="input-field col s6">
+            <input placeholder="DE" type="text" formControlName="countryCode" id="country_code">
+            <label for="country_code">Country Code</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s6">
+            <input placeholder="Berlin" type="text" formControlName="city" id="city">
+            <label for="city">City</label>
+        </div>
+
+        <div class="input-field col s6">
+            <input placeholder="+49 1234 56789" type="text" formControlName="phone" id="phone">
+            <label for="phone">Phone</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s4 offset-s8 right-align">
+            <button class="waves-effect waves-light btn blue lighten-2" type="submit" [class.disabled]="customer.invalid">Save</button>
+            <button class="waves-effect waves-orange btn white grey-text" (click)="navigateBack()">Cancel</button>
+            <button *ngIf="customer.value.id" class="waves-effect waves-red red btn" type="button" (click)="deleteCustomer(customer.value.id)">Delete</button>
+        </div>
+    </div>
+
+</form>

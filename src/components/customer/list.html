@@ -1,0 +1,31 @@
+<h4>Customer List</h4>
+<div class="row">
+    <div class="col s10 offset-s1">
+        <table class="highlight responsive-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>Customer since</th>
+                    <th class="right-align">Satisfaction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let customer of customers" [routerLink]="[customer.id]">
+                    <td>{{customer.name}}</td>
+                    <td>{{customer.city}}</td>
+                    <td>{{customer.country}} ({{customer.countryCode}})</td>
+                    <td>{{customer.customerSince}}</td>
+                    <td class="right-align">{{customer.satisfaction}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large pink" [routerLink]="['add']">
+        <i class="large material-icons">add</i>
+    </a>
+</div>

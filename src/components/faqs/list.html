@@ -1,0 +1,11 @@
+<h4>FAQs</h4>
+<ul class="collapsible" data-collapsible="accordion">
+    <li *ngFor="let faq of faqs">
+        <div class="collapsible-header"><i class="material-icons">help_outline</i>{{faq.question}}</div>
+        <div class="collapsible-body">
+            <p>{{faq.answer}}</p>
+            <a [routerLink]="[faq.id]">further details</a>
+        </div>
+    </li>
+
+</ul>
