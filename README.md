@@ -1,31 +1,22 @@
-# Helpdesk
+# angular-i18n-by-example
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+This repository contains a small sample application for demonstrating different i18n solutions. Besides regular angular framework i18n functionalities, For each different solution a corresponding branch will be generated in the future.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Branches
+* `master` contains the application without any i18n support
+* `fx` contains i18n implementation based on angular functionalities
+* `ng-translate` contains i18n implementation based on `ng-translate`
+* `custom` contains i18n implementation based on custom logic
 
-## Code scaffolding
+## Getting started
+Once you’ve downloaded or cloned the project to your system, third party dependencies like angular itself need to be installed in the scope of the project.  Follow these steps to install all dependencies
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+```
+$ cd project-directory
+$ npm install
+```
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Running the application
+You can start the application using `npm start` from the project directory. 
+### In Memory Storage
+All data is only persisted in memory. All services contain arrays with `JSON` data. 
