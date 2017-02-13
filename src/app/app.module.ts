@@ -7,10 +7,12 @@ import {AppRoutingModule} from './app-routing.module';
 import {BOOTSTRAP_COMPONENT, ALL_COMPONENTS} from '../components/all';
 import {ALL_SERVICES} from '../services/all';
 import {ALL_RESOLVERS} from '../resolvers/all';
+import {ALL_PIPES} from '../pipes/all';
 
 @NgModule({
     declarations: [
-        ALL_COMPONENTS
+        ...ALL_COMPONENTS,
+        ...ALL_PIPES
     ],
     imports: [
         BrowserModule,

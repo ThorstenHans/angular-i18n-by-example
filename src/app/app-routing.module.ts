@@ -1,10 +1,8 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {CustomerListComponent} from '../components/customer/list';
-import {CustomerDetailsComponent} from '../components/customer/details';
-import {FaqListComponent} from '../components/faqs/list';
-import {FaqDetailsComponent} from '../components/faqs/details';
 import {CustomerResolver} from '../resolvers/customerResolver';
+import {CustomerDetailsComponent} from '../components/customer/details';
 
 const routes: Routes = [
     {
@@ -26,13 +24,9 @@ const routes: Routes = [
         }
     },
     {
-        path: 'faqs',
-        component: FaqListComponent
+        path: '**',
+        redirectTo: 'customers'
     },
-    {
-        path: 'faqs/:id',
-        component: FaqDetailsComponent
-    }
 ];
 
 @NgModule({
