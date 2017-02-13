@@ -1,0 +1,52 @@
+{
+  "menu":{
+    "customers": "Customers"
+  },
+  "customerList": {
+    "header": "Customer List",
+    "tableHeaders": {
+      "name": "Name",
+      "city": "City",
+      "country": "Country",
+      "customerSince": "Customer since",
+      "satisfaction": "Satisfaction"
+    }
+  },
+  "languages": {
+    "de-DE": "German",
+    "en-US": "English"
+  },
+  "customerDetails": {
+    "headers": {
+      "new": "New Customer",
+      "update": "Details for {{name}}"
+    },
+    "fields": {
+      "name": {
+        "caption": "Name",
+        "placeholder": "John Smith"
+      },
+      "country": {
+        "caption": "Country",
+        "placeholder": "United States of America"
+      },
+      "countryCode": {
+        "caption": "Country Code",
+        "placeholder": "US"
+      },
+      "city": {
+        "caption": "City",
+        "placeholder": "New York"
+      },
+      "phone": {
+        "caption": "Phone",
+        "placeholder": "+1 (555) 123 456"
+      }
+    }
+  },
+  "buttons": {
+    "save": "save",
+    "cancel": "cancel",
+    "delete": "delete"
+  }
+}

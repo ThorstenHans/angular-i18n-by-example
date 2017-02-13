@@ -1,14 +1,19 @@
-<h4>Customer List</h4>
+<div class="row">
+    <div class="col s10 offset-s1">
+        <h5>{{"customerList.header" | translate}}</h5>
+    </div>
+</div>
+
 <div class="row">
     <div class="col s10 offset-s1">
         <table class="highlight responsive-table">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>City</th>
-                    <th>Country</th>
-                    <th>Customer since</th>
-                    <th class="right-align">Satisfaction</th>
+                    <th>{{'customerList.tableHeaders.name' | translate}}</th>
+                    <th translate>customerList.tableHeaders.city</th>
+                    <th>{{'customerList.tableHeaders.country' | translate}}</th>
+                    <th>{{'customerList.tableHeaders.customerSince' | translate}}</th>
+                    <th class="right-align">{{'customerList.tableHeaders.satisfaction' | translate}}</th>
                 </tr>
             </thead>
             <tbody>
@@ -16,8 +21,8 @@
                     <td>{{customer.name}}</td>
                     <td>{{customer.city}}</td>
                     <td>{{customer.country}} ({{customer.countryCode}})</td>
-                    <td>{{customer.customerSince}}</td>
-                    <td class="right-align">{{customer.satisfaction}}</td>
+                    <td>{{customer.customerSince | date: 'mediumDate': currentLanguage}}</td>
+                    <td class="right-align">{{customer.satisfaction | number: '1.2-2': currentLanguage}}</td>
 
                 </tr>
             </tbody>

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {CustomerService} from '../../services/customerService';
 import {Customer} from '../../models/customer';
-import {Router} from '@angular/router';
+import {TranslateService} from 'ng2-translate';
 
 @Component({
     selector: 'customer-list',
@@ -11,8 +11,12 @@ export class CustomerListComponent implements OnInit {
 
     public customers: Array<Customer> = [];
 
-    constructor(private _router: Router, private _customerService: CustomerService) {
+    constructor(private _translateService: TranslateService, private _customerService: CustomerService) {
 
+    }
+
+    public get currentLanguage(): string {
+        return this._translateService.currentLang;
     }
 
     public ngOnInit(): void {

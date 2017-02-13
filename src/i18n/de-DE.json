@@ -1,0 +1,52 @@
+{
+  "menu":{
+    "customers": "Kunden"
+  },
+  "customerList": {
+    "header": "Kundenliste",
+    "tableHeaders": {
+      "name": "Name",
+      "city": "Stadt",
+      "country": "Land",
+      "customerSince": "Kunde seit",
+      "satisfaction": "Zufriedenheit"
+    }
+  },
+  "languages": {
+    "de-DE": "Deutsch",
+    "en-US": "Englisch"
+  },
+  "customerDetails": {
+    "headers": {
+      "new": "Neuer Kunde",
+      "update": "Details für {{name}}"
+    },
+    "fields": {
+      "name": {
+        "caption": "Name",
+        "placeholder": "Max Mustermann"
+      },
+      "country": {
+        "caption": "Land",
+        "placeholder": "Deutschland"
+      },
+      "countryCode": {
+        "caption": "Landeskürzel",
+        "placeholder": "DE"
+      },
+      "city": {
+        "caption": "Stadt",
+        "placeholder": "Berlin"
+      },
+      "phone": {
+        "caption": "Telefon",
+        "placeholder": "+49 (123) 123 456"
+      }
+    }
+  },
+  "buttons": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen"
+  }
+}
