@@ -10,8 +10,8 @@ export class DynamicDatePipe implements PipeTransform {
 
     }
 
-    public transform(value: any, pattern: string = 'mediumDate', currentLocale: string): any {
-        let ngPipe = new DatePipe(currentLocale || this._translateService.currentLang);
+    public transform(value: any, pattern: string = 'mediumDate'): any {
+        let ngPipe = new DatePipe(this._translateService.currentLang);
         return ngPipe.transform(value, pattern);
     }
 

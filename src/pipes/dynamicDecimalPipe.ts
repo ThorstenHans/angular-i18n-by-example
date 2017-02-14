@@ -10,8 +10,8 @@ export class DynamicDecimalPipe implements PipeTransform {
 
     }
 
-    public transform(value: any, digits: string = null, currentLocale: string): any {
-        let ngPipe = new DecimalPipe(currentLocale || this._translateService.currentLang);
+    public transform(value: any, digits: string = null): any {
+        let ngPipe = new DecimalPipe(this._translateService.currentLang);
         return ngPipe.transform(value, digits);
     }
 
