@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col s10 offset-s1">
-        <h5 *ngIf="customer?.value?.name"translate [translateParams]="{name: customer?.value?.name}">customerDetails.headers.update</h5>
+        <h5 *ngIf="customer?.value?.name">{{ 'customerDetails.headers.update' | translate : {name: customer?.value?.name} }} </h5>
         <h5 *ngIf="!customer?.value?.name"[translate]>customerDetails.headers.new</h5>
 
     </div>
